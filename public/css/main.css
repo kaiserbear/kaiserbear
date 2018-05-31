@@ -6300,7 +6300,7 @@ h1 {
   height: 100%;
   overflow-x: show; }
   .main h3 {
-    color: #0E233A; }
+    color: black; }
   .main img {
     width: 300px; }
 
@@ -6351,9 +6351,9 @@ h1 {
     display: inline-block; }
     .mailchimp input[type="email"]:focus {
       box-shadow: none;
-      border-bottom: 1px solid #0E233A; }
+      border-bottom: 1px solid black; }
   .mailchimp button {
-    background: #0E233A;
+    background: black;
     color: white;
     font-weight: normal;
     border: none;

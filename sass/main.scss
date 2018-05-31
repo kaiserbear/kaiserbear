@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "app";
 
-$allertonBlue: #0E233A;
+$allertonBlue: black;
 $allertonYellow: #F1C52E;
 
 html, body {
@@ -92,7 +92,7 @@ h1 {
     }
 
     button {
-        background: #0E233A;
+        background: $allertonBlue;
         color: white;
         font-weight: normal;
         border: none;
