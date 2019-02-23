@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp --dev"
+    "start": "npm start"
   },
   "author": "Kaiser Bear",
   "license": "ISC",
@@ -23,7 +23,7 @@
     "gulp-sass": "^4.0.1",
     "jquery": "^3.3.1",
     "method-override": "^2.3.5",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
     "gulp-cli": "^2.0.1",

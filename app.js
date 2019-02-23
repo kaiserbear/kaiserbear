@@ -27,5 +27,5 @@ app.use(require("express-session")({
 app.use("/", indexRoutes);
 
 app.listen(port, ip, function() {
-    console.log("Allerton Investments Server Has Started!");
+    console.log("Kaiser Bear Server Has Started!");
 });
