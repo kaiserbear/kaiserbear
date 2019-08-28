@@ -11,35 +11,34 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.5",
-    "aws-sdk": "^2.466.0",
+    "aws-sdk": "^2.518.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
+    "braces": "^2.3.2",
     "browser-sync": "^2.26.7",
     "connect-flash": "^0.1.1",
     "cors": "^2.8.4",
     "del": "^3.0.0",
     "dotenv": "^4.0.0",
-    "ejs": "^2.5.8",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-ipfilter": "^1.0.1",
-    "express-session": "^1.16.1",
+    "express-session": "^1.16.2",
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "hoek": "^5.0.3",
     "jquery": "^3.4.1",
     "method-override": "^2.3.5",
-    "mongoose": "^4.13.12",
+    "mongoose": "^4.13.19",
     "node-sass": "^4.12.0",
     "nodemailer": "^4.6.4",
     "passport": "^0.3.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.5.0",
     "popper.js": "^1.15.0",
-    "sendmail": "^1.4.1"
+    "sendmail": "^1.6.1"
   },
   "devDependencies": {
-    "gulp-cli": "^2.2.0",
-    "gulp-watch-sass": "^1.4.1"
   }
 }
