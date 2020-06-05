@@ -23,7 +23,7 @@
 		this.modalMaxHeight = 480;
 
 		this.animating = false;
-		this.supportAnimation = Util.cssSupports('transition');
+		// this.supportAnimation = Util.cssSupports('transition');
 
 		this.initSchedule();
 	};
