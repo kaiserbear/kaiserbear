@@ -81,6 +81,158 @@
 		Util.removeClass(this.element, 'cd-schedule--loading');
 	};
 
+	// ScheduleTemplate.prototype.initEvents = function() {
+	// 	var self = this;
+	// 	for(var i = 0; i < this.singleEvents.length; i++) {
+	// 		// open modal when user selects an event
+	// 		this.singleEvents[i].addEventListener('click', function(event){
+	// 			event.preventDefault();
+	// 			if(!self.animating) self.openModal(this.getElementsByTagName('a')[0]);
+	// 		});
+	// 	}
+	// 	// //close modal window
+	// 	// this.modalClose.addEventListener('click', function(event){
+	// 	// 	event.preventDefault();
+	// 	// 	if( !self.animating ) self.closeModal();
+	// 	// });
+	// 	// this.coverLayer.addEventListener('click', function(event){
+	// 	// 	event.preventDefault();
+	// 	// 	if( !self.animating ) self.closeModal();
+	// 	// });
+	// };
+
+	// ScheduleTemplate.prototype.openModal = function(target) {
+	// 	var self = this;
+	// 	var mq = self.mq();
+	// 	this.animating = true;
+
+	// 	//update event name and time
+	// 	this.modalEventName.textContent = target.getElementsByTagName('em')[0].textContent;
+	// 	this.modalDate.textContent = target.getAttribute('data-start')+' - '+target.getAttribute('data-end');
+	// 	this.modal.setAttribute('data-event', target.getAttribute('data-event'));
+
+	// 	//update event content
+	// 	this.loadEventContent(target.getAttribute('data-content'));
+
+	// 	Util.addClass(this.modal, 'cd-schedule-modal--open');
+		
+	// 	setTimeout(function(){
+	// 		//fixes a flash when an event is selected - desktop version only
+	// 		Util.addClass(target.closest('li'), 'cd-schedule__event--selected');
+	// 	}, 10);
+
+	// 	if( mq == 'mobile' ) {
+	// 		self.modal.addEventListener('transitionend', function cb(){
+	// 			self.animating = false;
+	// 			self.modal.removeEventListener('transitionend', cb);
+	// 		});
+	// 	} else {
+	// 		var eventPosition = target.getBoundingClientRect(),
+	// 			eventTop = eventPosition.top,
+	// 			eventLeft = eventPosition.left,
+	// 			eventHeight = target.offsetHeight,
+	// 			eventWidth = target.offsetWidth;
+
+	// 		var windowWidth = window.innerWidth,
+	// 			windowHeight = window.innerHeight;
+
+	// 		var modalWidth = ( windowWidth*.8 > self.modalMaxWidth ) ? self.modalMaxWidth : windowWidth*.8,
+	// 			modalHeight = ( windowHeight*.8 > self.modalMaxHeight ) ? self.modalMaxHeight : windowHeight*.8;
+
+	// 		var modalTranslateX = parseInt((windowWidth - modalWidth)/2 - eventLeft),
+	// 			modalTranslateY = parseInt((windowHeight - modalHeight)/2 - eventTop);
+			
+	// 		var HeaderBgScaleY = modalHeight/eventHeight,
+	// 			BodyBgScaleX = (modalWidth - eventWidth);
+
+	// 		//change modal height/width and translate it
+	// 		self.modal.setAttribute('style', 'top:'+eventTop+'px;left:'+eventLeft+'px;height:'+modalHeight+'px;width:'+modalWidth+'px;transform: translateY('+modalTranslateY+'px) translateX('+modalTranslateX+'px)');
+	// 		//set modalHeader width
+	// 		self.modalHeader.setAttribute('style', 'width:'+eventWidth+'px');
+	// 		//set modalBody left margin
+	// 		self.modalBody.setAttribute('style', 'margin-left:'+eventWidth+'px');
+	// 		//change modalBodyBg height/width ans scale it
+	// 		self.modalBodyBg.setAttribute('style', 'height:'+eventHeight+'px; width: 1px; transform: scaleY('+HeaderBgScaleY+') scaleX('+BodyBgScaleX+')');
+	// 		//change modal modalHeaderBg height/width and scale it
+	// 		self.modalHeaderBg.setAttribute('style', 'height: '+eventHeight+'px; width: '+eventWidth+'px; transform: scaleY('+HeaderBgScaleY+')');
+			
+	// 		self.modalHeaderBg.addEventListener('transitionend', function cb(){
+	// 			//wait for the  end of the modalHeaderBg transformation and show the modal content
+	// 			self.animating = false;
+	// 			Util.addClass(self.modal, 'cd-schedule-modal--animation-completed');
+	// 			self.modalHeaderBg.removeEventListener('transitionend', cb);
+	// 		});
+	// 	}
+
+	// 	//if browser do not support transitions -> no need to wait for the end of it
+	// 	this.animationFallback();
+	// };
+
+	// ScheduleTemplate.prototype.closeModal = function() {
+	// 	var self = this;
+	// 	var mq = self.mq();
+
+	// 	var item = self.element.getElementsByClassName('cd-schedule__event--selected')[0],
+	// 		target = item.getElementsByTagName('a')[0];
+
+	// 	this.animating = true;
+
+	// 	if( mq == 'mobile' ) {
+	// 		Util.removeClass(this.modal, 'cd-schedule-modal--open');
+	// 		self.modal.addEventListener('transitionend', function cb(){
+	// 			Util.removeClass(self.modal, 'cd-schedule-modal--content-loaded');
+	// 			Util.removeClass(item, 'cd-schedule__event--selected');
+	// 			self.animating = false;
+	// 			self.modal.removeEventListener('transitionend', cb);
+	// 		});
+	// 	} else {
+	// 		var eventPosition = target.getBoundingClientRect(),
+	// 			eventTop = eventPosition.top,
+	// 			eventLeft = eventPosition.left,
+	// 			eventHeight = target.offsetHeight,
+	// 			eventWidth = target.offsetWidth;
+
+	// 		var modalStyle = window.getComputedStyle(self.modal),
+	// 			modalTop = Number(modalStyle.getPropertyValue('top').replace('px', '')),
+	// 			modalLeft = Number(modalStyle.getPropertyValue('left').replace('px', ''));
+
+	// 		var modalTranslateX = eventLeft - modalLeft,
+	// 			modalTranslateY = eventTop - modalTop;
+
+	// 		Util.removeClass(this.modal, 'cd-schedule-modal--open cd-schedule-modal--animation-completed');
+
+	// 		//change modal width/height and translate it
+	// 		self.modal.style.width = eventWidth+'px';self.modal.style.height = eventHeight+'px';self.modal.style.transform = 'translateX('+modalTranslateX+'px) translateY('+modalTranslateY+'px)';
+	// 		//scale down modalBodyBg element
+	// 		self.modalBodyBg.style.transform = 'scaleX(0) scaleY(1)';
+	// 		//scale down modalHeaderBg element
+	// 		// self.modalHeaderBg.setAttribute('style', 'transform: scaleY(1)');
+	// 		self.modalHeaderBg.style.transform = 'scaleY(1)';
+
+	// 		self.modalHeaderBg.addEventListener('transitionend', function cb(){
+	// 			//wait for the  end of the modalHeaderBg transformation and reset modal style
+	// 			Util.addClass(self.modal, 'cd-schedule-modal--no-transition');
+	// 			setTimeout(function(){
+	// 				self.modal.removeAttribute('style');
+	// 				self.modalBody.removeAttribute('style');
+	// 				self.modalHeader.removeAttribute('style');
+	// 				self.modalHeaderBg.removeAttribute('style');
+	// 				self.modalBodyBg.removeAttribute('style');
+	// 			}, 10);
+	// 			setTimeout(function(){
+	// 				Util.removeClass(self.modal, 'cd-schedule-modal--no-transition');
+	// 			}, 20);
+	// 			self.animating = false;
+	// 			Util.removeClass(self.modal, 'cd-schedule-modal--content-loaded');
+	// 			Util.removeClass(item, 'cd-schedule__event--selected');
+	// 			self.modalHeaderBg.removeEventListener('transitionend', cb);
+	// 		});
+	// 	}
+
+	// 	//if browser do not support transitions -> no need to wait for the end of it
+	// 	this.animationFallback();
+	// };
+
 	ScheduleTemplate.prototype.checkEventModal = function(modalOpen) {
 		// this function is used on resize to reset events/modal style
 		this.animating = true;
