@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
-article.post-content {
+.page-schedule article.post-content {
     max-width: inherit!important;
     margin: 0 auto;
     padding: 1vw 0;
@@ -2962,10 +2962,6 @@ mark{
 	--font-primary: 'Source Sans Pro', sans-serif;
 	--schedule-rows-number: 14;
 	--schedule-rows-height: 50px
-}
-body{
-	color:hsl(0, 0%, 13%);
-	color:var(--cd-color-text)
 }
 
 .cd-schedule{
