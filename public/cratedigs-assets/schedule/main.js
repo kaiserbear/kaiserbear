@@ -1,4 +1,9 @@
 (function() {
+
+	$( ".nav" ).click(function() {
+		console.log( "check" );
+	});
+
 	// Schedule Template - by CodyHouse.co
 	function ScheduleTemplate( element ) {
 		this.element = element;
