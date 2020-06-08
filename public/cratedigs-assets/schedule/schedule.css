@@ -3047,7 +3047,7 @@ mark{
 		display:-ms-flexbox;
 		display:flex;
 		-ms-flex-wrap:nowrap;
-		flex-wrap:nowrap
+		flex-wrap:nowrap;
 }
 }
 @media (min-width: 80rem){
@@ -3168,7 +3168,8 @@ mark{
 		width:calc(100% + 2px);
 		left:-1px;
 		max-width:none;
-		margin-right:0
+		margin-right:0;
+		.js .cd-schedule__event
 }
 	.js .cd-schedule__event a{
 		padding:0.75em;
