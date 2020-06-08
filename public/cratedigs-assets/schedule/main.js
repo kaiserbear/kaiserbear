@@ -42,10 +42,14 @@
 
 	ScheduleTemplate.prototype.scheduleReset = function() {
 		// according to the mq value, init the style of the template
+
+		console.log('resetting schedule');
+
 		var mq = this.mq(),
 			loaded = Util.hasClass(this.element, 'js-schedule-loaded'),
 			modalOpen = Util.hasClass(this.modal, 'cd-schedule-modal--open');
 		if( mq == 'desktop' && !loaded ) {
+			console.log('check 6');
 			Util.addClass(this.element, 'js-schedule-loaded');
 			this.placeEvents();
 			modalOpen && this.checkEventModal(modalOpen);
