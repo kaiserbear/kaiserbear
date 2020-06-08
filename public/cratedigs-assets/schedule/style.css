@@ -61,8 +61,13 @@ footer {
 		transition: transform .3s cubic-bezier(.4,.01,.165,.99);
 		transform: translateY(-4vw);
 	}
-	body .nav {
-		margin: 28vw 0 0;
+	body .site-head-open .nav {
+		margin: 0;
+		background: white;
+		height: 100vh;
+		padding: 0 2rem;
+		top: 63px;
+		position: absolute;
 	}
 	body .site-foot {
 		display: none;
