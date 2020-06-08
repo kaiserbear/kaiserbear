@@ -372,6 +372,7 @@
 		window.onclick = function (e) {
 			if (e.target.localName == 'a') {
 				console.log('check 4');
+				checkResize();
 			}
 		}
 
