@@ -76,8 +76,9 @@ footer {
 		background: white;
 		height: 100vh;
 		padding: 0 2rem;
-		top: 63px;
+		top: 92px;
 		position: absolute;
+		width: 100%;
 	}
 	body .site-foot {
 		display: none!important;
