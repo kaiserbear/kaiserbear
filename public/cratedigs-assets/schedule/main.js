@@ -54,6 +54,8 @@
 			Util.addClass(this.element, 'js-schedule-loaded');
 			this.placeEvents();
 			modalOpen && this.checkEventModal(modalOpen);
+		} else if (loaded) {
+			console.log('check 9');
 		} else if( mq == 'mobile' && loaded) {
 			console.log('check 7');
 			//in this case you are on a mobile version (first load or resize from desktop)
