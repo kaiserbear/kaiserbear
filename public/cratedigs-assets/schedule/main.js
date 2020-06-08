@@ -1,12 +1,5 @@
 
 
-$( ".nav" ).each(function(index) {
-    $(this).on("click", function(){
-		console.log('check');
-    
-    });
-});
-
 (function() {
 
 	// Schedule Template - by CodyHouse.co
