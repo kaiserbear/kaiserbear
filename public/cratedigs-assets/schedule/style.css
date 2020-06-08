@@ -21,16 +21,16 @@ footer {
 }
 
 @media (max-width: 850px) {
-	.nav-burger {
+	body .nav-burger {
 		display: block;
 		left: 30px;
 		top: 27px;
 	}
-	.site-wrapper {
+	body .site-wrapper {
 		padding: 40vw 3vw 3vw 3vw;
 		min-height: 100vh;
 	}
-	#radio-player {
+	body #radio-player {
 		position: absolute;
 		top: 70px;
 		width: 100%;
@@ -40,7 +40,7 @@ footer {
 		padding: 15px 127px;
 		border-top: 1px solid whitesmoke;
 	}
-	.site-head-center {
+	body .site-head-center {
 		position: absolute;
 		display: -ms-flexbox;
 		display: flex;
@@ -50,10 +50,10 @@ footer {
 		left: 0;
 		top: 20px;
 	}
-	.post-card {
+	body .post-card {
 		height: 140px;
 	}
-	.site-head-open .site-foot {
+	body .site-head-open .site-foot {
 		display: none;
 		position: fixed;
 		z-index: 9999;
