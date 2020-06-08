@@ -3169,7 +3169,7 @@ mark{
 		left:-1px;
 		max-width:none;
 		margin-right:0;
-		.js .cd-schedule__event
+		overflow:hidden;
 }
 	.js .cd-schedule__event a{
 		padding:0.75em;
