@@ -1,8 +1,11 @@
 
-$( ".nav" ).click(function() {
-	console.log( "check" );
-});
 
+$( ".nav" ).each(function(index) {
+    $(this).on("click", function(){
+		console.log('check');
+    
+    });
+});
 
 (function() {
 
