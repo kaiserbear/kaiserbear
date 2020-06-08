@@ -2928,7 +2928,8 @@ mark{
 #clockbox {
     text-align: center;
     font-weight: 700;
-    font-size: 2rem;
+	font-size: 2rem;
+	margin-top: 3rem;
 }
 :root{
 	--cd-color-event-1:hsl(199, 25%, 46%);
