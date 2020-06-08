@@ -1,17 +1,3 @@
-
-$(document).ready(function() {
-    
-    console.log(console.log('Document ready'));
-    console.log(console.log($(".nav a")));
-    
-    $( ".nav li a" ).each(function(i){
-        $(this).click(function(){
-           console.log('check 1');
-        });
-    });
-});
-
-
 (function() {
 
 	// Schedule Template - by CodyHouse.co
@@ -41,9 +27,18 @@ $(document).ready(function() {
 		// this.supportAnimation = Util.cssSupports('transition');
 
 		this.initSchedule();
+
+
+		window.onclick = function (e) {
+			$('.nav-schedule').bind('click', function () {
+				console.log('check 4');
+				this.initSchedule();
+			});
+		}
 	};
 
 	ScheduleTemplate.prototype.initSchedule = function() {
+
 		this.scheduleReset();
 		// this.initEvents();
 	};
