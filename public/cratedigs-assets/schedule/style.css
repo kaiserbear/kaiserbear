@@ -297,6 +297,10 @@ footer a {
     padding: 1vw 0;
 }
 
+.post-card-title {
+    color: white;
+}
+
 .post-content-title {
     margin: 0;
     color: #131313;
