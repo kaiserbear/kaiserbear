@@ -79,6 +79,7 @@
 	};
 
 	ScheduleTemplate.prototype.placeEvents = function() {
+		console.log('check 10');
 		// on big devices - place events in the template according to their time/day
 		var self = this,
 			slotHeight = this.topInfoElement.offsetHeight;
