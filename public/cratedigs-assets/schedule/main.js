@@ -29,13 +29,19 @@
 		this.initSchedule();
 
 
-		window.onclick = function (e) {
-			$('.nav-schedule').bind('click', function () {
-				console.log('check 4');
-				this.initSchedule();
-			});
-		}
+		
 	};
+
+	window.onclick = function (e) {
+		$('.nav-schedule').bind('click', function () {
+			console.log('check 4');
+			ScheduleTemplate.prototype.initSchedule = function() {
+
+				this.scheduleReset();
+				// this.initEvents();
+			};
+		});
+	}
 
 	ScheduleTemplate.prototype.initSchedule = function() {
 
