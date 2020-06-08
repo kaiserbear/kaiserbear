@@ -39,10 +39,6 @@
 		// this.initEvents();
 	};
 
-	ScheduleTemplate.prototype.scheduleReload = function() {
-		this.placeEvents();
-	};
-
 	ScheduleTemplate.prototype.scheduleReset = function() {
 		// according to the mq value, init the style of the template
 
@@ -50,20 +46,23 @@
 			loaded = Util.hasClass(this.element, 'js-schedule-loaded'),
 			modalOpen = Util.hasClass(this.modal, 'cd-schedule-modal--open');
 		if( mq == 'desktop' && !loaded ) {
-			console.log('check 6');
+
 			Util.addClass(this.element, 'js-schedule-loaded');
 			this.placeEvents();
 			modalOpen && this.checkEventModal(modalOpen);
 		} else if (loaded) {
+			// Add by Jay Hughes
 			console.log('check 9');
+			Util.removeClass(this.element, 'cd-schedule--loading js-schedule-loaded');
+			this.placeEvents();
 		} else if( mq == 'mobile' && loaded) {
-			console.log('check 7');
+
 			//in this case you are on a mobile version (first load or resize from desktop)
 			Util.removeClass(this.element, 'cd-schedule--loading js-schedule-loaded');
 			this.resetEventsStyle();
 			modalOpen && this.checkEventModal();
 		} else if( mq == 'desktop' && modalOpen ) {
-			console.log('check 8');
+
 			//on a mobile version with modal open - need to resize/move modal window
 			this.checkEventModal(modalOpen);
 			Util.removeClass(this.element, 'cd-schedule--loading');
@@ -229,14 +228,12 @@
 
 		window.onclick = function (e) {
 			if (e.target.localName == 'a') {
-				console.log('check 4');
 				document.getElementsByTagName("html")[0].className += " js";
 				checkResize();
 			}
 		}
 
 		function checkResize(){
-			console.log('check 5');
 			
 			for(var i = 0; i < scheduleTemplateArray.length; i++) {
 				scheduleTemplateArray[i].scheduleReset();
