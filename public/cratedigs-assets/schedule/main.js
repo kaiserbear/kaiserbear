@@ -79,10 +79,10 @@
 	};
 
 	ScheduleTemplate.prototype.placeEvents = function() {
-		console.log('check 10');
 		// on big devices - place events in the template according to their time/day
 		var self = this,
 			slotHeight = this.topInfoElement.offsetHeight;
+
 		for(var i = 0; i < this.singleEvents.length; i++) {
 			var anchor = this.singleEvents[i].getElementsByTagName('a')[0];
 			var start = getScheduleTimestamp(anchor.getAttribute('data-start')),
@@ -91,7 +91,7 @@
 			var eventTop = slotHeight*(start - self.timelineStart)/self.timelineUnitDuration,
 				eventHeight = slotHeight*duration/self.timelineUnitDuration;
 
-			this.singleEvents[i].setAttribute('style', 'top: '+(eventTop-1)+'px; height: '+(eventHeight +1)+'px');
+			this.singleEvents[i].setAttribute('style', 'top: '+(eventTop-6)+'px; height: '+(eventHeight -5)+'px');
 		}
 
 		Util.removeClass(this.element, 'cd-schedule--loading');
