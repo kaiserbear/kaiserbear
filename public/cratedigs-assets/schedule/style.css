@@ -322,24 +322,33 @@ footer a {
 		padding: 40vw 3vw 3vw 3vw;
 		min-height: 100vh;
 	}
-	body #radio-player {
-		position: absolute;
-		top: 70px;
-		width: 100%;
-		-webkit-transform-origin-x: left;
-		background: white;
-		z-index: 200;
-		padding: 15px 127px;
-		border-top: 1px solid whitesmoke;
-		height: 79px;
-	}
-	body #radio-player audio {
-		width: calc(100% - 3rem);
-		outline: none;
-		border: 1px solid #e8e8e8;
-		left: 2rem;
-		position: absolute;
-	}
+    body #radio-player {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        -webkit-transform-origin-x: left;
+        background: transparent;
+        z-index: 200;
+        padding: 15px 127px;
+        border-top: transparent;
+        height: 79px;
+        overflow: visible;
+    }
+    body #radio-player audio {
+        width: calc(100% - 3rem);
+        outline: none;
+        border: transparent;
+        left: 2rem;
+        position: absolute;
+    }
+
+    body .controls .live {
+        position: absolute;
+        top: -41px;
+        z-index: 2000;
+        right: 14px;
+    }
+
 	body .site-head-center {
 		position: absolute;
 		display: -ms-flexbox;
@@ -391,8 +400,6 @@ footer a {
 		width: 100%;
 		padding: 0;
 	}
-	body .live {
-		display:none;
-	}
+
 
 }
