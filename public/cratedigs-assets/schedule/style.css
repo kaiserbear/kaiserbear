@@ -13,6 +13,56 @@
     line-height: 0;
 }
 
+footer {
+    background: #333333;
+    min-height: 200px;
+    font-size: 1rem;
+    padding: 3rem;
+}
+
+@media (max-width: 850px) {
+	.nav-burger {
+		display: block;
+		left: 30px;
+		top: 27px;
+	}
+	.site-wrapper {
+		padding: 40vw 3vw 3vw 3vw;
+		min-height: 100vh;
+	}
+	#radio-player {
+		position: absolute;
+		top: 70px;
+		width: 100%;
+		right: 0;
+		background: white;
+		z-index: 200;
+		padding: 15px 127px;
+		border-top: 1px solid whitesmoke;
+	}
+	.site-head-center {
+		position: absolute;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+		left: 0;
+		top: 20px;
+	}
+	.post-card {
+		height: 140px;
+	}
+	.site-head-open .site-foot {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		bottom: 0;
+		transition: transform .3s cubic-bezier(.4,.01,.165,.99);
+		transform: translateY(-4vw);
+	}
+}
+
 .site-foot, .page-head, .site-head-right { display: none; }
 .jay-footer p { position: relative; display: inline; }
 .jay-footer p:last-child { float:right }
