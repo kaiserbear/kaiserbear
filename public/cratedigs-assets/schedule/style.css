@@ -34,11 +34,19 @@ footer {
 		position: absolute;
 		top: 70px;
 		width: 100%;
-		right: 0;
+		-webkit-transform-origin-x: left;
 		background: white;
 		z-index: 200;
 		padding: 15px 127px;
 		border-top: 1px solid whitesmoke;
+		height: 79px;
+	}
+	body #radio-player audio {
+		width: calc(100% - 3rem);
+		outline: none;
+		border: 1px solid #e8e8e8;
+		left: 2rem;
+		position: absolute;
 	}
 	body .site-head-center {
 		position: absolute;
@@ -52,6 +60,8 @@ footer {
 	}
 	body .post-card {
 		height: 140px;
+		width: 100%;
+		max-width: inherit;
 	}
 	body .site-head-open .site-foot {
 		display: none;
