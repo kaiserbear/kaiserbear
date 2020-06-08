@@ -372,12 +372,14 @@
 		window.onclick = function (e) {
 			if (e.target.localName == 'a') {
 				console.log('check 4');
+				document.getElementsByTagName("html")[0].className += " js";
 				checkResize();
 			}
 		}
 
 		function checkResize(){
 			console.log('check 5');
+			
 			for(var i = 0; i < scheduleTemplateArray.length; i++) {
 				scheduleTemplateArray[i].scheduleReset();
 			}
