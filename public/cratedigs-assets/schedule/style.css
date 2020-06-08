@@ -61,6 +61,22 @@ footer {
 		transition: transform .3s cubic-bezier(.4,.01,.165,.99);
 		transform: translateY(-4vw);
 	}
+	body .nav {
+		margin: 28vw 0 0;
+	}
+	body .site-foot {
+		display: none;
+	}
+	body .site-head {
+		height: 80px;
+	}
+	body .site-head-logo img {
+		display: block;
+		margin-top: 8px;
+		width: auto;
+		height: 20px;
+	}
+
 }
 
 .site-foot, .page-head, .site-head-right { display: none; }
