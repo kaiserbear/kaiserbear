@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
+
+
 #now-playing {
     position: relative;
     margin: 2rem 0 4rem;
@@ -37,6 +39,13 @@ footer {
 .site-foot, .page-head, .site-head-right { 
     display: none; 
 }
+
+.home-template .page-head {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1460058418905-d61a1b4a55fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-size: contain;
+}
+
 .jay-footer p { 
     position: relative; 
     display: inline;
