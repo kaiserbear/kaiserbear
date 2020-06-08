@@ -32,16 +32,7 @@
 		
 	};
 
-	window.onclick = function (e) {
-		$('.nav-schedule').bind('click', function () {
-			console.log('check 4');
-			ScheduleTemplate.prototype.initSchedule = function() {
-
-				this.scheduleReset();
-				// this.initEvents();
-			};
-		});
-	}
+	
 
 	ScheduleTemplate.prototype.initSchedule = function() {
 
@@ -353,6 +344,7 @@
 	var scheduleTemplate = document.getElementsByClassName('js-cd-schedule'),	
 		scheduleTemplateArray = [],
 		resizing = false;
+	
 	if( scheduleTemplate.length > 0 ) { // init ScheduleTemplate objects
 		for( var i = 0; i < scheduleTemplate.length; i++) {
 			(function(i){
@@ -377,6 +369,12 @@
 			}
 		});
 
+		window.onclick = function (e) {
+			$('.nav-schedule').bind('click', function () {
+				console.log('check 4');
+			});
+		}
+
 		function checkResize(){
 			for(var i = 0; i < scheduleTemplateArray.length; i++) {
 				scheduleTemplateArray[i].scheduleReset();
@@ -384,4 +382,6 @@
 			resizing = false;
 		};
 	}
+
+
 }());
