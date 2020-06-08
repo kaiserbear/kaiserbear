@@ -3036,6 +3036,7 @@ mark{
 .cd-schedule__events{
 	position:relative;
 	z-index:1
+	overflow:hidden;
 }
 @media (min-width: 64rem){
 	.js .cd-schedule__events{
