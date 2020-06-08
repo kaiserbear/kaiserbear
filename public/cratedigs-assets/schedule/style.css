@@ -71,7 +71,7 @@ footer {
 		transition: transform .3s cubic-bezier(.4,.01,.165,.99);
 		transform: translateY(-4vw);
 	}
-	body .site-head-open .nav {
+	body.site-head-open .nav {
 		margin: 0;
 		background: white;
 		height: 100vh;
@@ -80,7 +80,7 @@ footer {
 		position: absolute;
 	}
 	body .site-foot {
-		display: none;
+		display: none!important;
 	}
 	body .site-head {
 		height: 80px;
