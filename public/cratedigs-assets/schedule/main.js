@@ -377,6 +377,7 @@
 		}
 
 		function checkResize(){
+			console.log('check 5');
 			for(var i = 0; i < scheduleTemplateArray.length; i++) {
 				scheduleTemplateArray[i].scheduleReset();
 			}
