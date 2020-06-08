@@ -392,3 +392,7 @@ footer a {
     -ms-flex-align: center;
     align-items: inherit;
 }
+
+.site-head-left  {
+    top: 5px;
+}
