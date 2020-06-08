@@ -370,9 +370,9 @@
 		});
 
 		window.onclick = function (e) {
-			$('.nav-schedule').bind('click', function () {
+			if (e.target.localName == 'a') {
 				console.log('check 4');
-			});
+			}
 		}
 
 		function checkResize(){
