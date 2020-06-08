@@ -93,6 +93,13 @@ footer {
 		height: 20px;
 	}
 
+	body.site-head-open .site-head-container {
+		height: 100vh;
+		transition: height .2s ease-in;
+		width: 100%;
+		padding: 0;
+	}
+
 }
 
 .site-foot, .page-head, .site-head-right { display: none; }
