@@ -1,8 +1,10 @@
-(function() {
 
-	$( ".nav" ).click(function() {
-		console.log( "check" );
-	});
+$( ".nav" ).click(function() {
+	console.log( "check" );
+});
+
+
+(function() {
 
 	// Schedule Template - by CodyHouse.co
 	function ScheduleTemplate( element ) {
