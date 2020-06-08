@@ -1,4 +1,16 @@
 
+$(document).ready(function() {
+    
+    console.log(console.log('Document ready'));
+    console.log(console.log($(".nav a")));
+    
+    $( ".nav li a" ).each(function(i){
+        $(this).click(function(){
+           console.log('check 1');
+        });
+    });
+});
+
 
 (function() {
 
