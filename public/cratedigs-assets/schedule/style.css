@@ -415,7 +415,7 @@ footer a {
         z-index: 200;
         padding: 15px 127px;
         border-top: transparent;
-        height: 79px;
+        height: 70px;
         overflow: visible;
     }
     body #radio-player audio {
@@ -431,6 +431,7 @@ footer a {
         top: -41px;
         z-index: 2000;
         right: 14px;
+        display: none;
     }
 
 	body .site-head-center {
@@ -489,4 +490,13 @@ footer a {
         margin-right: -35px;
     }
 
+}
+
+/* IOS Only */
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    body #radio-player {
+        background: grey!important;
+    }
 }
