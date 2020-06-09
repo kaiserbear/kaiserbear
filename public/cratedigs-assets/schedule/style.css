@@ -8,6 +8,19 @@
     text-align:center;
 }
 
+.artist-track-info {
+    position: fixed;
+    bottom: 54px;
+    background: #2d2d2d;
+    text-align: left;
+    right: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 0 0 0 32px;
+}
+
 .site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.svg);
     width: 32px;
@@ -197,19 +210,20 @@ hr {
 /* HTML5 audio PLayer */
 
 #radio-player {
-    position: absolute;
-    top: 20px;
-    width: 25%;
-    right: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
     background: white;
     z-index: 400;
 }
 #radio-player audio {
-    width: calc(100% - 70px);
+    width: 90%;
     outline: none;
     border: 1px solid #e8e8e8;
-    float: left;
     display: inline-block;
+    position: relative;
+    float: right;
 }
 .controls .label {
     color: red;
@@ -271,11 +285,11 @@ hr {
 }
 
 .controls .live {
-    float: left;
-    top: 18px;
     position: relative;
     display: inline-block;
-    width: 70px;
+    width: 20%;
+    top: 38px;
+    left: 40px;
 }
 .controls progress::-moz-progress-bar {
     background-color:white;
