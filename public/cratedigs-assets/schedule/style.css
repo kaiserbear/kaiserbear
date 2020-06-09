@@ -390,16 +390,17 @@ footer a {
 
 .social {
     position: absolute;
-    right: 0;
+    right: 30px;
     z-index: 400;
+    top: 26px;
 }
 
 .social a {
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .social a img {
-    height: 40px;
+    height: 30px;
 }
 
 .site-head-container, .site-head-left {
@@ -418,6 +419,9 @@ footer a {
 		display: block;
 		left: 30px;
 		top: 27px;
+    }
+    body .social {
+        display: none;
     }
     body.home-template .page-head {
         display: none;
