@@ -394,6 +394,14 @@ footer a {
     z-index: 400;
 }
 
+.social a {
+    margin-left: 1rem;
+}
+
+.socail a img {
+    height: 40px;
+}
+
 .site-head-container, .site-head-left {
     display: -ms-flexbox;
     display: flex;
