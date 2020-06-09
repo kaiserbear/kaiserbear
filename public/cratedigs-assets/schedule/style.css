@@ -241,7 +241,8 @@ hr {
     transform: translateX(-50%) translateY(-50%);
     width: 15px;
     height: 15px;
-    top: -10px;
+    top: -48px;
+    left: -23px;
 }
 .pulsating-circle:before {
     content: "";
