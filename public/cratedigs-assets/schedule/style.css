@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
-.site-head-logo:before {
+.site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.png);
     width: 30px;
     height: 30px;
