@@ -1,35 +1,10 @@
-// Possible improvements:
-// - Change timeline and volume slider into input sliders, reskinned
-// - Change into Vue or React component
-// - Be able to grab a custom title instead of "Music Song"
-// - Hover over sliders to see preview of timestamp/volume change
-
-
 const audioPlayer = document.querySelector(".audio-player");
 const audio = new Audio(
   "https://cratedigs.radioca.st/stream"
 );
+//credit for song: Adrian kreativaweb@gmail.com
 
 console.dir(audio);
-
-audio.addEventListener(
-  "loadeddata",
-  () => {
-    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-      audio.duration
-    );
-    audio.volume = .75;
-  },
-  false
-);
-
-//click on timeline to skip around
-const timeline = audioPlayer.querySelector(".timeline");
-timeline.addEventListener("click", e => {
-  const timelineWidth = window.getComputedStyle(timeline).width;
-  const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
-  audio.currentTime = timeToSeek;
-}, false);
 
 //click volume slider to change volume
 const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
@@ -38,16 +13,8 @@ volumeSlider.addEventListener('click', e => {
   const newVolume = e.offsetX / parseInt(sliderWidth);
   audio.volume = newVolume;
   audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
-}, false)
+}, false) 
 
-//check audio percentage and update time accordingly
-setInterval(() => {
-  const progressBar = audioPlayer.querySelector(".progress");
-  progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-  audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-    audio.currentTime
-  );
-}, 500);
 
 //toggle between playing and pausing on button click
 const playBtn = audioPlayer.querySelector(".controls .toggle-play");
