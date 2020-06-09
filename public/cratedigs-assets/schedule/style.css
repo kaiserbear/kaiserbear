@@ -2,8 +2,11 @@
 
 .site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.png);
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    content: "";
+    position: absolute;
+    left: -60px;
 }
 
 #now-playing {
