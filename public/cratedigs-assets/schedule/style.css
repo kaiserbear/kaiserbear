@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 
+.site-head-logo {
+    position: relative;
+}
+
 .site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.png);
     width: 32px;
@@ -7,6 +11,7 @@
     content: "";
     position: absolute;
     left: -60px;
+    display: block;
 }
 
 #now-playing {
