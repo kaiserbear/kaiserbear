@@ -90,8 +90,8 @@ hr {
     overflow: hidden;
     counter-increment: a;
     margin: 2%;
-    max-width: 15%;
-    min-width: 15%;
+    max-width: 45%;
+    min-width: 25%;
 }
 .kg-bookmark-card {
     width: 100%;
