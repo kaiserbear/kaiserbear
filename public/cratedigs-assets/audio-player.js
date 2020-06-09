@@ -5,7 +5,7 @@
 // - Hover over sliders to see preview of timestamp/volume change
 
 
-function cd-player() {
+function cd_player() {
     
     const audioPlayer = document.querySelector(".audio-player");
     const audio = new Audio(
@@ -98,7 +98,7 @@ function cd-player() {
 }
 
 // run once 
-cd-player();
+cd_player();
 
 // this event runs for every page view after initial load
-swup.on('contentReplaced', init);
+swup.on('contentReplaced', cd_player);
