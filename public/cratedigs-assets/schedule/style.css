@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.center {
+    text-align:center;
+}
+
 .site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.svg);
     width: 32px;
