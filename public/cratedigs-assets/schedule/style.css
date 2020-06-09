@@ -5,13 +5,16 @@
 }
 
 .site-head-logo::before {
-    background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.png);
+    background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.svg);
     width: 32px;
     height: 32px;
     content: "";
     position: absolute;
-    left: -60px;
+    left: -35px;
     display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #now-playing {
