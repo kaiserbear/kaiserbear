@@ -410,7 +410,7 @@ footer a {
     body #radio-player {
         width: 100%;
         -webkit-transform-origin-x: left;
-        background: transparent;
+        background: white;
         z-index: 200;
         padding: 15px 127px;
         border-top: transparent;
@@ -496,6 +496,9 @@ footer a {
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
     body #radio-player {
-        background: #555!important;
+        background: #333!important;
+    }
+    body .artist-track-info {
+        bottom: 70px;
     }
 }
