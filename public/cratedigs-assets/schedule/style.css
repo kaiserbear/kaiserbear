@@ -213,6 +213,10 @@ hr {
     width: inherit;
 }
 
+.post-content-excerpt {
+    display: none;
+}
+
 /* HTML5 audio PLayer */
 
 #radio-player {
