@@ -11,7 +11,7 @@
 .artist-track-info {
     position: fixed;
     bottom: 54px;
-    background: #2d2d2d;
+    background: #2593F9;
     text-align: left;
     right: 0;
     width: 100%;
@@ -71,6 +71,7 @@ footer {
     min-height: 200px;
     font-size: 1rem;
     padding: 3rem;
+    opacity: 0;
 }
 
 .site-foot, .page-head, .site-head-right { 
@@ -407,8 +408,6 @@ footer a {
 		min-height: 100vh;
 	}
     body #radio-player {
-        position: absolute;
-        top: 70px;
         width: 100%;
         -webkit-transform-origin-x: left;
         background: transparent;
@@ -497,6 +496,6 @@ footer a {
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
     body #radio-player {
-        background: grey!important;
+        background: #555!important;
     }
 }
