@@ -21,6 +21,11 @@
     padding: 0 0 0 32px;
 }
 
+.artist-track-info span {
+    top: 14px;
+    position: relative;
+}
+
 .site-head-logo::before {
     background: url(https://www.kaiserbear.co.uk/cratedigs-assets/logo-symbol.svg);
     width: 32px;
