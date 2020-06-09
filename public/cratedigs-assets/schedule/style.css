@@ -462,5 +462,8 @@ footer a {
 		padding: 0;
 	}
 
+    body .site-head-logo {
+        margin-right: -35px;
+    }
 
 }
