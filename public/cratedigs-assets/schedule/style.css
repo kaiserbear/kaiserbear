@@ -388,6 +388,12 @@ footer a {
     top: 0;
 }
 
+.social {
+    position: absolute;
+    right: 0;
+    z-index: 400;
+}
+
 .site-head-container, .site-head-left {
     display: -ms-flexbox;
     display: flex;
