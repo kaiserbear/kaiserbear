@@ -109,12 +109,12 @@
   transition: 0.25s;
 }
 .audio-player .controls .volume-container .volume-slider .volume-percentage {
-  background: coral;
+  background: red;
   height: 100%;
   width: 75%;
 }
 .audio-player .controls .volume-container:hover .volume-slider {
-  left: -12px;
+  left: 5px;
   width: 120px;
 }
 
@@ -139,7 +139,7 @@
 .controls .label {
   color: red;
   font-size: 1.4rem;
-  margin-left: 24px;
+  margin: 0px 20px 0 20px;
 }
 .pulsating-circle {
   position: relative;
