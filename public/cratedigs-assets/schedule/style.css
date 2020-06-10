@@ -300,7 +300,6 @@ hr {
     display: inline-block;
     width: 20%;
     top: 38px;
-    left: 40px;
 }
 .controls progress::-moz-progress-bar {
     background-color:white;
