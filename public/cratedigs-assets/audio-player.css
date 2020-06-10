@@ -114,7 +114,7 @@
   width: 75%;
 }
 .audio-player .controls .volume-container:hover .volume-slider {
-  left: 5px;
+  left: -29px;
   width: 120px;
 }
 
