@@ -71,6 +71,8 @@
 }
 .play-container {
   width: 10%;
+  position: relative;
+  z-index: 20;
 }
 .audio-player .controls .toggle-play.pause:hover {
   transform: scale(1.1);
