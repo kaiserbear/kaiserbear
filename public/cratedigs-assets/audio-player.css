@@ -82,10 +82,9 @@
 }
 .audio-player .controls .volume-container {
   cursor: pointer;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  float: right;
-  width: 10%;
+  right: 0;
 }
 
 .audio-player .controls .volume-container .volume-button {
@@ -100,22 +99,19 @@
   transform: scale(0.7);
 }
 .audio-player .controls .volume-container .volume-slider {
-  position: absolute;
+  position: relative;
   top: 0px;
   z-index: -1;
   height: 15px;
   background: white;
   box-shadow: 0 0 20px #000a;
   transition: 0.25s;
+  float: right;
 }
 .audio-player .controls .volume-container .volume-slider .volume-percentage {
   background: red;
   height: 100%;
   width: 75%;
-}
-.audio-player .controls .volume-container:hover .volume-slider {
-  left: -29px;
-  width: 120px;
 }
 
 /* HTML5 audio PLayer */
