@@ -34,6 +34,7 @@ playBtn.addEventListener(
   false
 );
 
+
 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
   const volumeEl = audioPlayer.querySelector(".volume-container .volume");
   audio.muted = !audio.muted;

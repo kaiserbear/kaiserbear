@@ -197,7 +197,13 @@
 .controls .live {
   position: relative;
   display: inline-block;
+  display: none;
 }
+
+.cc_streaminfo-cd {
+  display:none;
+}
+
 .controls progress::-moz-progress-bar {
   background-color:white;
 }
