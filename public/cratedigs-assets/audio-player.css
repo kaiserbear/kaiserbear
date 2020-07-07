@@ -113,7 +113,7 @@
 .audio-player .controls .volume-container .volume-slider .volume-percentage {
   background: red;
   height: 100%;
-  width: 75%;
+  width: 100%;
 }
 
 /* HTML5 audio PLayer */
