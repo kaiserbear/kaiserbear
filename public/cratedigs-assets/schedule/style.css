@@ -333,6 +333,9 @@ footer a {
 		left: 30px;
 		top: 27px;
     }
+    body .volume-slider {
+        display:none;
+    }
     body .social {
         display: none;
     }
