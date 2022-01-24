@@ -1,0 +1,15 @@
+routes:
+  /match-results/:
+    template: match-results
+    content_type: application/json
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
+
+
