@@ -1,13 +1,13 @@
 {
     "url": "http://localhost:2368/",
     "server": {
-        "port": 2369,
+        "port": 2370,
         "host": "127.0.0.1"
     },
     "database": {
         "client": "sqlite3",
         "connection": {
-            "filename": "/Users/jayhughes/Development/kaiserbear/content/data/ghost-local.db"
+            "filename": "/Users/jayhughes/Development/cratedigs/content/data/ghost-local.db"
         }
     },
     "mail": {
@@ -22,6 +22,5 @@
     "process": "local",
     "paths": {
         "contentPath": "content"
-    },
-    "port": 2369
+    }
 }
