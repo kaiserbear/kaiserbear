@@ -1,7 +1,4 @@
 routes:
-  /match-results/:
-    template: match-results
-    content_type: application/json
 
 collections:
   /:
@@ -11,5 +8,3 @@ collections:
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
-
-
