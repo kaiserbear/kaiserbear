@@ -455,7 +455,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         align-items: center;
         text-align: center;
         margin: 0 0 10vh 0;
-        font-weight: 300;
+        /* font-weight: 300; */
         font-size: 3.6rem;
         line-height: 1.1em;
     }
@@ -500,7 +500,6 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     .gh-head-open #gh-head .gh-head-inner {
         grid-template-rows: auto 1fr auto;
     }
-    .gh-head-open #gh-head .gh-head-actions,
     .gh-head-open #gh-head .gh-head-menu {
         display: flex;
     }
@@ -630,7 +629,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 }
 
 .post-card-title {
-    margin: 0 0 0.6em;
+    margin: 0 0 3rem;
     font-size: 2.4rem;
     transition: color 0.2s ease-in-out;
 }

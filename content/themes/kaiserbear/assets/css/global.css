@@ -502,6 +502,7 @@ h2 {
     font-weight: 700;
     /* border-bottom: 10px solid #ceee07; */
     position: relative;
+    padding: 0 0 1rem 0;
 }
 
 h2::before {
