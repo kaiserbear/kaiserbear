@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:2370/",
+    "url": "http://localhost:2302/",
     "server": {
         "port": 2302,
         "host": "127.0.0.1"
