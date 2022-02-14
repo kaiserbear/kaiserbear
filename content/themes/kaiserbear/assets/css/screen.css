@@ -60,7 +60,7 @@ production stylesheet in assets/built/screen.css
 /* Special Section */
 
 .work {
-    background: #ebf3ff;
+    background: #FFECF9;
     color: black;
     padding: 5vmin 0;
 }
@@ -136,7 +136,7 @@ production stylesheet in assets/built/screen.css
 }
 
 .site-logo {
-    max-height: 237px;
+    max-height: 390px;
     /* Test */
 }
 
@@ -154,6 +154,10 @@ production stylesheet in assets/built/screen.css
         max-width: 80vmin;
         font-size: 1.5rem;
         margin-top: 2rem;
+    }
+    .site-logo {
+        max-height: 190px;
+        /* Test */
     }
 }
 

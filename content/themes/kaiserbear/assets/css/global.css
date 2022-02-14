@@ -505,7 +505,8 @@ h2 {
     padding: 0 0 1rem 0;
 }
 
-h2::before {
+
+/* h2::before {
     content: '';
     position: absolute;
     background-color: #ceee07;
@@ -513,7 +514,7 @@ h2::before {
     left: 1px;
     bottom: -10px;
     width: 40%;
-}
+} */
 
 @media (max-width: 600px) {
     h2 {
