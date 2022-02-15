@@ -547,10 +547,10 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 /* ---------------------------------------------------------- */
 
 .post-feed {
-    grid-gap: 10vmin;
+    grid-gap: 5vmin;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10vmin 0;
+    padding: 4vmin 0;
     position: relative;
 }
 
