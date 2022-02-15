@@ -420,6 +420,10 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     transform: translatex(6px) rotate(-135deg);
 }
 
+.site-main {
+    padding: 5vmin 0;
+}
+
 
 /* Mobile Menu
 /* ---------------------------------------------------------- */
