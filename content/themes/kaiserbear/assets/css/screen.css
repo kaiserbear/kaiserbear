@@ -453,8 +453,12 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         justify-content: space-between;
         user-select: none;
     }
+    .page-template .site-main,
+    .post-template .site-main {
+        padding: 5vmin 0;
+    }
     .site-main {
-        padding: 40px;
+        padding: 5vmin;
     }
     .home-template #gh-head.has-cover .gh-head-brand {
         justify-content: flex-end;
